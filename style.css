@@ -1,3 +1,49 @@
 body {
     font-family: Inter;
+    width: 600px;
+    height: 1407px;
+}
+
+/* Header: logo + icon */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Work Sans;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+header img {
+    width: 24px;
+    height: 24px;
+}
+
+#main-content button {
+    font-family: Public Sans;
+}
+
+#main-content select {
+    font-family: Public Sans;
+}
+
+#search-container,
+#select-ingredient-container,
+#filter-container {
+    background-color: #F7F9FB;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#search-input {
+    width: 540px;
+    height: 56px;
+    background-image: url('assets/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: 8px center;
+    border: none;
 }

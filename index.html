@@ -10,40 +10,175 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Catering</title>
 </head>
 
 <body>
-    <nav id="nav-container">
+    <header id="header-container">
         <h1>Catering</h1>
         <img src="assets/filter_icon.png" alt="Filter icon">
-    </nav>
+    </header>
 
     <!-- Webbsidans huvudinnehåll -->
     <main id="main-content">
 
-        <!-- Första container: Sökfältet + pills  -->
+        <!-- Första container: Sökfältet  -->
         <div id="search-container">
+            
             <form id="search-form">
-                <label for="search-textarea"></label>
-                <textarea id="search-textarea" name="search"></textarea>
+                <label for="search-input"></label>
+                <input type="search" id="search-input">
             </form>
         </div>
+
+        <!--Sökresultat/pill-container-->
+        <div id="select-ingredient-container">
+
+            <button>Fläsk</button>
+            <button>Koriander</button>
+            <button>Taco</button>
+            <button>Bröllop</button>
+            <button>Mexikanskt</button>
+            <button>Modifierbar</button>
+
+            <div id="deselect-ingredient-container">
+                <button>Pinjenötter</button>
+            </div>
+        </div>
+
 
         <!-- Andra container: Filter -->
         <div id="filter-container">
 
+            <section id="main-ingredients-container">
+                <h2>Huvudingrediens</h2>
+                <select>
+                    <option>Kött</option>
+                    <option>Kött</option>
+                    <option>Kött</option>
+                    <option>Kött</option>
+                </select>
+
+                <select>
+                    <option>Fisk</option>
+                    <option>Fisk</option>
+                    <option>Fisk</option>
+                    <option>Fisk</option>
+                </select>
+
+                <button>Pasta</button>
+                <button>Potatis</button>
+            </section>
+
+            <section id="event-container">
+                <h2>Tillställning</h2>
+                <button>Bröllop</button>
+                <button>Soaré</button>
+                <button>Julbord</button>
+                <button>Pill</button>
+                <button>Pill</button>
+            </section>
+
+            <section id="theme-container">
+                <h2>Kök/Tema/Säsong</h2>
+                <button>Mexikanskt</button>
+                <button>Taco</button>
+                <button>Medelhavs</button>
+                <button>Husmanskost</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Vår</button>
+                <button>Sommar</button>
+                <button>Höst</button>
+                <button>Vinter</button>
+                <button>Buffé</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+            </section>
+
+            <section id="type-of-meal-container">
+                <h2>Typ av rätt</h2>
+                <button>Huvudrätt</button>
+                <button>Förrätt</button>
+                <button>Efterrätt</button>
+                <button>Tilltugg</button>
+                <button>Tårta</button>
+            </section>
+
+            <section id="sides-container">
+                <h2>Tillbehör</h2>
+                <button>Koriander</button>
+                <button>Gurka</button>
+                <button>Tomat</button>
+                <button>Rödbetor</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+                <button>Pill</button>
+            </section>
+
+            <section id="allergies-container">
+                <h2>Allergier</h2>
+                <select>
+                    <option>Nötter</option>
+                    <option>Nötter</option>
+                    <option>Nötter</option>
+                    <option>Nötter</option>
+                </select>
+                <button>Mjölkprotein</button>
+                <button>Gluten</button>
+            </section>
+
+            <section id="preferences-container">
+                <h2>Preferenser</h2>
+
+                <button>Vegetariskt</button>
+                <button>Veganskt</button>
+                <button>Halal</button>
+                <button>Koser</button>
+            </section>
+
+            <section id="others-container">
+                <h2>Övrigt</h2>
+                <button>Modifierbar</button>
+                <button>Skalbar</button>
+                <button>Varmrätt</button>
+                <button>Kallrätt</button>
+                <button>Pill</button>
+                <button>Pill</button>
+            </section>
         </div>
 
 
         <!-- Tredje container: Antal recept och Sortering (alfabetisk + relevans) -->
         <div id="sorting-container">
-
+            <div id="sorting-container-first-row">
+                <p>Sortera</p>
+            </div>
+            <div id="sorting-container-second-row">
+                <p>423/423 recept</p>
+                <select>
+                    <option>Alfabetisk</option>
+                    <option>Relevans</option>
+                </select>
+            </div>
         </div>
 
 
         <!-- Fjärde container: Recept som matchar sökfiltret -->
         <div id="recipe-container">
+        
 
         </div>
 
