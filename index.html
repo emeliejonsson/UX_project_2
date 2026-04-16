@@ -48,11 +48,13 @@
             <div id="deselect-ingredient-container">
                 <button class="unselected-pill">Pinjenötter</button>
             </div>
+            <div id="divider"></div>
         </div>
 
 
         <!-- Andra container: Filter -->
         <div id="filter-container">
+
 
             <section id="main-ingredients-container">
                 <h2>Huvudingrediens</h2>
@@ -179,6 +181,7 @@
         <!-- Tredje container: Antal recept och Sortering (alfabetisk + relevans) -->
         <div id="sorting-container">
             <div id="sorting-container-first-row">
+                <div></div>
                 <p>Sortera</p>
             </div>
             <div id="sorting-container-second-row">
@@ -194,13 +197,139 @@
 
 
         <!-- Fjärde container: Recept som matchar sökfiltret -->
-        <div id="recipe-container">
+        <div class="recipe-container">
+            <article class="taco-recipe">
+                <div class="recipe-first-block">
+                    <div class="recipe-first-row-img">
+                        <img src="assets/taco.png">
+                    </div>
 
+                    <div class="recipe-first-block-text">
+                        <div class="knife-and-fork-style">
+                            <div class="knife-and-fork-style-filter">
+                                <img src="assets/knife_fork.png" class="knife-and-fork">
+                                <p>Buffé</p>
+                                <p>Fläsk</p>
+                            </div>
 
+                            <div class="knife-and-fork-style-modify">
+                                <p>MODIFIERBAR</p>
+                                <img src="assets/arrow.png" class="arrow">
+                            </div>
+                        </div>
+
+                        <div class="recipe-second-row">
+                            <h2>Taco Asada</h2>
+                        </div>
+
+                        <div class="recipe-third-row">
+                            <p>Preptid: 20 min</p>
+                            <p class="allergy">Allergener: Gluten</p>
+                            <p>Skalbarhet: inget max</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recipe-fourth-row">
+                    <p>Serveras: Varm</p>
+                    <img src="assets/warm.png" class="warm">
+                </div>
+
+                <div class="recipe-fifth-row">
+                    <p>PRISKLASS: LÅG</p>
+                    <button class="draft">+ LÄGG I UTKAST</button>
+                </div>
+            </article>
+
+            <article class="sweet-potato-recipe">
+                <div class="recipe-first-block">
+                    <div class="recipe-first-row-img">
+                        <img src="assets/sweet_potato.png">
+                    </div>
+
+                    <div class="recipe-first-block-text">
+                        <div class="knife-and-fork-style">
+                            <div class="knife-and-fork-style-filter">
+                                <img src="assets/knife_fork.png" class="knife-and-fork">
+                                <p>Huvudrätt</p>
+                                <p>Veganskt</p>
+                            </div>
+
+                            <div class="knife-and-fork-style-modify">
+                                <p>MODIFIERBAR</p>
+                                <img src="assets/arrow.png" class="arrow">
+                            </div>
+                        </div>
+
+                        <div class="recipe-second-row">
+                            <h2>Bakad Sötpotatis med Quinoa</h2>
+                        </div>
+
+                        <div class="recipe-third-row">
+                            <p>Preptid: 20 min</p>
+                            <p class="allergy">Allergener: Gluten</p>
+                            <p>Skalbarhet: max 500</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recipe-fourth-row">
+                    <p>Serveras: Kall</p>
+                    <img src="assets/cold.png" class="cold">
+                </div>
+
+                <div class="recipe-fifth-row">
+                    <p>PRISKLASS: MEDEL</p>
+                    <button class="draft">+ LÄGG I UTKAST</button>
+                </div>
+            </article>
+
+            <article class="beet-recipe">
+                <div class="recipe-first-block">
+                    <div class="recipe-first-row-img">
+                        <img src="assets/beet.png">
+                    </div>
+
+                    <div class="recipe-first-block-text">
+                        <div class="knife-and-fork-style">
+                            <div class="knife-and-fork-style-filter">
+                                <img src="assets/knife_fork.png" class="knife-and-fork">
+                                <p>Buffé</p>
+                                <p>Vegetariskt</p>
+                            </div>
+
+                            <div class="knife-and-fork-style-modify">
+                                <p>MODIFIERBAR</p>
+                                <img src="assets/arrow.png" class="arrow">
+                            </div>
+                        </div>
+
+                        <div class="recipe-second-row">
+                            <h2>Rödbetor i ugn</h2>
+                        </div>
+
+                        <div class="recipe-third-row">
+                            <p>Preptid: 20 min</p>
+                            <p class="allergy">Allergener: Nöt</p>
+                            <p>Skalbarhet: max 500</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="recipe-fourth-row">
+                    <p>Serveras: Varm</p>
+                    <img src="assets/warm.png" class="warm">
+                </div>
+
+                <div class="recipe-fifth-row">
+                    <p>PRISKLASS: LÅG</p>
+                    <button class="draft">+ LÄGG I UTKAST</button>
+                </div>
+            </article>
         </div>
-
-
-
     </main>
 
 </body>
