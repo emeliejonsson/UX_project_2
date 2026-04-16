@@ -28,7 +28,7 @@
 
         <!-- Första container: Sökfältet  -->
         <div id="search-container">
-            
+
             <form id="search-form">
                 <label for="search-input"></label>
                 <input type="search" id="search-input">
@@ -38,15 +38,15 @@
         <!--Sökresultat/pill-container-->
         <div id="select-ingredient-container">
 
-            <button>Fläsk</button>
-            <button>Koriander</button>
-            <button>Taco</button>
-            <button>Bröllop</button>
-            <button>Mexikanskt</button>
-            <button>Modifierbar</button>
+            <button class="selected-pill">Fläsk</button>
+            <button class="selected-pill">Koriander</button>
+            <button class="selected-pill">Taco</button>
+            <button class="selected-pill">Bröllop</button>
+            <button class="selected-pill">Mexikanskt</button>
+            <button class="selected-pill">Modifierbar</button>
 
             <div id="deselect-ingredient-container">
-                <button>Pinjenötter</button>
+                <button class="unselected-pill">Pinjenötter</button>
             </div>
         </div>
 
@@ -56,107 +56,122 @@
 
             <section id="main-ingredients-container">
                 <h2>Huvudingrediens</h2>
-                <select>
-                    <option>Kött</option>
-                    <option>Kött</option>
-                    <option>Kött</option>
-                    <option>Kött</option>
-                </select>
+                <div class="filter-container-div">
+                    <select class="meat-dropdown">
+                        <option>Kött</option>
+                        <option>Fläsk</option>
+                        <option>Nöt</option>
+                        <option>Ox</option>
+                    </select>
 
-                <select>
-                    <option>Fisk</option>
-                    <option>Fisk</option>
-                    <option>Fisk</option>
-                    <option>Fisk</option>
-                </select>
+                    <select class="fish-dropdown">
+                        <option>Fisk</option>
+                        <option>Fisk</option>
+                        <option>Fisk</option>
+                        <option>Fisk</option>
+                    </select>
 
-                <button>Pasta</button>
-                <button>Potatis</button>
+                    <button class="pill">Pasta</button>
+                    <button class="pill">Potatis</button>
+                </div>
             </section>
 
             <section id="event-container">
                 <h2>Tillställning</h2>
-                <button>Bröllop</button>
-                <button>Soaré</button>
-                <button>Julbord</button>
-                <button>Pill</button>
-                <button>Pill</button>
+                <div class="filter-container-div">
+                    <button class="pill">Bröllop</button>
+                    <button class="pill">Soaré</button>
+                    <button class="pill">Julbord</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                </div>
             </section>
 
             <section id="theme-container">
                 <h2>Kök/Tema/Säsong</h2>
-                <button>Mexikanskt</button>
-                <button>Taco</button>
-                <button>Medelhavs</button>
-                <button>Husmanskost</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Vår</button>
-                <button>Sommar</button>
-                <button>Höst</button>
-                <button>Vinter</button>
-                <button>Buffé</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
+                <div class="filter-container-div">
+                    <button class="pill">Mexikanskt</button>
+                    <button class="pill">Taco</button>
+                    <button class="pill">Medelhavs</button>
+                    <button class="pill">Husmanskost</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Vår</button>
+                    <button class="pill">Sommar</button>
+                    <button class="pill">Höst</button>
+                    <button class="pill">Vinter</button>
+                    <button class="pill">Buffé</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                </div>
             </section>
 
             <section id="type-of-meal-container">
                 <h2>Typ av rätt</h2>
-                <button>Huvudrätt</button>
-                <button>Förrätt</button>
-                <button>Efterrätt</button>
-                <button>Tilltugg</button>
-                <button>Tårta</button>
+                <div class="filter-container-div">
+                    <button class="pill">Huvudrätt</button>
+                    <button class="pill">Förrätt</button>
+                    <button class="pill">Efterrätt</button>
+                    <button class="pill">Tilltugg</button>
+                    <button class="pill">Tårta</button>
+                </div>
             </section>
 
             <section id="sides-container">
                 <h2>Tillbehör</h2>
-                <button>Koriander</button>
-                <button>Gurka</button>
-                <button>Tomat</button>
-                <button>Rödbetor</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
-                <button>Pill</button>
+                <div class="filter-container-div">
+                    <button class="pill">Koriander</button>
+                    <button class="pill">Gurka</button>
+                    <button class="pill">Tomat</button>
+                    <button class="pill">Rödbetor</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                </div>
             </section>
 
             <section id="allergies-container">
                 <h2>Allergier</h2>
-                <select>
-                    <option>Nötter</option>
-                    <option>Nötter</option>
-                    <option>Nötter</option>
-                    <option>Nötter</option>
-                </select>
-                <button>Mjölkprotein</button>
-                <button>Gluten</button>
+                <div class="filter-container-div">
+                    <select class="allergies-dropdown">
+                        <option>Nötter</option>
+                        <option>Äpple</option>
+                        <option>Päron</option>
+                        <option>Kiwi</option>
+                    </select>
+                    <button class="pill">Mjölkprotein</button>
+                    <button class="pill">Gluten</button>
+                </div>
             </section>
 
             <section id="preferences-container">
                 <h2>Preferenser</h2>
-
-                <button>Vegetariskt</button>
-                <button>Veganskt</button>
-                <button>Halal</button>
-                <button>Koser</button>
+                <div class="filter-container-div">
+                    <button class="pill">Vegetariskt</button>
+                    <button class="pill">Veganskt</button>
+                    <button class="pill">Halal</button>
+                    <button class="pill">Koser</button>
+                </div>
             </section>
 
             <section id="others-container">
                 <h2>Övrigt</h2>
-                <button>Modifierbar</button>
-                <button>Skalbar</button>
-                <button>Varmrätt</button>
-                <button>Kallrätt</button>
-                <button>Pill</button>
-                <button>Pill</button>
+                <div class="filter-container-div">
+                    <button class="pill">Modifierbar</button>
+                    <button class="pill">Skalbar</button>
+                    <button class="pill">Varmrätt</button>
+                    <button class="pill">Kallrätt</button>
+                    <button class="pill">Pill</button>
+                    <button class="pill">Pill</button>
+                </div>
             </section>
         </div>
 
@@ -170,7 +185,9 @@
                 <p>423/423 recept</p>
                 <select>
                     <option>Alfabetisk</option>
-                    <option>Relevans</option>
+                    <option>Tillagningstid</option>
+                    <option>Priskategori</option>
+                    <option>Förberedelsetid</option>
                 </select>
             </div>
         </div>
@@ -178,7 +195,7 @@
 
         <!-- Fjärde container: Recept som matchar sökfiltret -->
         <div id="recipe-container">
-        
+
 
         </div>
 

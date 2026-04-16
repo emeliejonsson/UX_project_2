@@ -4,7 +4,7 @@ body {
     height: 1407px;
 }
 
-/* Header: logo + icon */
+/* --------------------------- HEADER --------------------------- */
 header {
     display: flex;
     flex-direction: row;
@@ -18,6 +18,8 @@ header img {
     width: 24px;
     height: 24px;
 }
+
+/* --------------------------- MAIN --------------------------- */
 
 #main-content button {
     font-family: Public Sans;
@@ -33,6 +35,8 @@ header img {
     background-color: #F7F9FB;
 }
 
+/* --------------------------- SEARCH CONTAINER --------------------------- */
+
 #search-container {
     display: flex;
     justify-content: center;
@@ -46,4 +50,45 @@ header img {
     background-repeat: no-repeat;
     background-position: 8px center;
     border: none;
+}
+
+/* --------------------------- SELECT INGREDIENT CONTAINER --------------------------- */
+
+
+
+/* --------------------------- FILTER CONTAINER  --------------------------- */
+
+/* Själva containern */
+#filter-container {
+    padding: 0.5rem;
+}
+
+/* Headers */
+#filter-container h2 {
+    size: 18px;
+    font-weight: normal;
+}
+
+.filter-container-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Unchosen pill & select dropdown appearance */
+.pill,
+.meat-dropdown,
+.fish-dropdown {
+    height: 30px;
+    background-color: #BDDBF9;
+    /* bakgrundsfärgen ska ändras när man trycker på pill-knappar */
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.allergies-dropdown {
+    height: 30px;
+    background-color: #BA5B5B;
+    border: none;
+    border-radius: 0.5rem;
 }
