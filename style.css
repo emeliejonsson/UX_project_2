@@ -73,6 +73,7 @@ header img {
     font-size: 16px;
     padding: 0 0.5rem 0 0.5rem;
     color: #FFFFFF;
+    margin: 0 0.5rem 0.5rem 0;
 }
 
 .unselected-pill {
@@ -101,6 +102,12 @@ header img {
     align-self: center;
 }
 
+.cross {
+    width: 9px;
+    height: 9px;
+    padding-left: 0.5rem;
+}
+
 /* --------------------------- FILTER CONTAINER  --------------------------- */
 
 /* Whole container */
@@ -127,8 +134,7 @@ header img {
 
 /* Unchosen pill & select dropdown appearance */
 .pill,
-.meat-dropdown,
-.fish-dropdown {
+.dropdown {
     height: 30px;
     background-color: #BDDBF9;
     border: none;
@@ -143,18 +149,9 @@ header img {
     color: white;
 }
 
-.meat-dropdown:hover,
-.fish-dropdown:hover {
+.dropdown:hover {
     background-color: #3C4C5D;
     color: white;
-}
-
-.allergies-dropdown {
-    height: 30px;
-    background-color: #BDDBF9;
-    /*#BA5B5B*/
-    border: none;
-    border-radius: 0.5rem;
 }
 
 /* ------------------------- SORTING CONTAINER ------------------------- */
@@ -177,6 +174,7 @@ header img {
     display: flex;
     align-items: center;
 }
+
 
 .sorting-options select {
     width: 280px;

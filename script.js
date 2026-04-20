@@ -1,7 +1,12 @@
 const pillButtons = document.querySelectorAll('.pill');
-const meatDropdown = document.querySelector('.meat-dropdown');
-const fishDropdown = document.querySelector('.fish-dropdown');
+const dropdowns = document.querySelectorAll('.dropdown');
 const searchField = document.querySelector('#search-input');
+
+
+function renderRecipeCount() {
+    let recipeCountEl = document.getElementById('recipe-count');
+    recipeCountEl.textContent = ('82/423 recept');
+};
 
 pillButtons.forEach(pill => {
     pill.addEventListener('click', () => {
@@ -10,24 +15,16 @@ pillButtons.forEach(pill => {
     })
 });
 
-meatDropdown.addEventListener('change', () => {
-    document.querySelector('#select-ingredient-container').style.display = 'block';
-    renderRecipeCount();
-});
-
-fishDropdown.addEventListener('change', () => {
-    document.querySelector('#select-ingredient-container').style.display = 'block';
-    renderRecipeCount();
+dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('change', () => {
+        document.querySelector('#select-ingredient-container').style.display = 'block';
+        renderRecipeCount();
+    })
 });
 
 searchField.addEventListener('keydown', (e) => {
-    if(e.key === 'Enter') {
-            document.querySelector('#select-ingredient-container').style.display = 'block';
+    if (e.key === 'Enter') {
+        document.querySelector('#select-ingredient-container').style.display = 'block';
         renderRecipeCount();
     }
 });
-
-function renderRecipeCount() {
-    let recipeCountEl = document.getElementById('recipe-count');
-    recipeCountEl.textContent = ('82/423 recept');
-};
