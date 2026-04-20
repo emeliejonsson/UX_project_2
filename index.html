@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <script defer src="script.js"></script>
     <title>Catering</title>
 </head>
 
@@ -52,7 +53,7 @@
             </div>
 
             <div id="full-divider"></div>
-    
+
         </div>
 
 
@@ -185,17 +186,19 @@
         <!-- Tredje container: Antal recept och Sortering (alfabetisk + relevans) -->
         <div id="sorting-container">
             <div id="sorting-container-first-row">
-                <div></div>
+
                 <p>Sortera</p>
             </div>
             <div id="sorting-container-second-row">
                 <p>423/423 recept</p>
-                <select>
-                    <option>Alfabetisk</option>
-                    <option>Tillagningstid</option>
-                    <option>Priskategori</option>
-                    <option>Förberedelsetid</option>
-                </select>
+                <div class="sorting-options">
+                    <select>
+                        <option>Alfabetisk</option>
+                        <option>Tillagningstid</option>
+                        <option>Priskategori</option>
+                        <option>Förberedelsetid</option>
+                    </select>
+                </div>
             </div>
         </div>
 
