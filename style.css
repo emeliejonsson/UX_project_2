@@ -103,7 +103,7 @@ header img {
 
 /* --------------------------- FILTER CONTAINER  --------------------------- */
 
-/* Själva containern */
+/* Whole container */
 #filter-container {
     padding: 0.5rem;
     height: 183px;
@@ -131,7 +131,6 @@ header img {
 .fish-dropdown {
     height: 30px;
     background-color: #BDDBF9;
-    /* bakgrundsfärgen ska ändras när man trycker på pill-knappar */
     border: none;
     border-radius: 0.5rem;
     font-family: Public Sans;
@@ -241,9 +240,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     margin-top: -0.5rem;
-
 }
-
 
 .knife-and-fork-style-modify {
     display: flex;
@@ -274,16 +271,16 @@ header img {
     margin-left: 1rem;
 }
 
+.allergy {
+    border: 2px solid #9B3736CC;
+    border-radius: 6px;
+    padding: 20px;
+}
+
 .recipe-fourth-row {
     display: flex;
     align-items: center;
     margin-top: 1rem;
-}
-
-.recipe-fourth-row-warm {
-    width: 15px;
-    height: 22px;
-
 }
 
 .recipe-fifth-row {
@@ -293,7 +290,7 @@ header img {
     margin-top: 1rem;
 }
 
-.recipe-fifth-row button {
+.draft {
     width: 156px;
     height: 30px;
     font-size: 16px;
@@ -302,6 +299,12 @@ header img {
     color: white;
     border: none;
 }
+
+.draft:hover {
+    box-shadow: 0px 2px 5px grey;
+}
+
+/* ------------------------- RECIPE CONTAINER IMAGES ------------------- */
 
 .knife-and-fork {
     width: 16px;
@@ -316,12 +319,6 @@ header img {
 .warm {
     height: 22px;
     width: 15px;
-}
-
-.allergy {
-    border: 2px solid #9B3736CC;
-    border-radius: 6px;
-    padding: 20px;
 }
 
 .cold {
