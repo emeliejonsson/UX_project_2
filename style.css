@@ -54,7 +54,42 @@ header img {
 
 /* --------------------------- SELECT INGREDIENT CONTAINER --------------------------- */
 
+.selected-pill {
+    height: 30px;
+    background-color: #3C4C5D;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Public Sans;
+    font-size: 16px;
+    padding: 0 0.5rem 0 0.5rem;
+    color: #FFFFFF;
+}
 
+.unselected-pill {
+    height: 30px;
+    background-color: #BA5B5B;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: Public Sans;
+    font-size: 16px;
+    padding: 0 0.5rem 0 0.5rem;
+    color: #FFFFFF;
+}
+
+#dashed-divider {
+    width: 90%;
+    border:none;
+    border-top: 2px dashed #E3E7EB;
+    margin: 1rem;
+    align-self: center;
+}
+
+#full-divider {
+    width: 90%;
+    border: 1px solid #E3E7EB;
+    margin: 1rem;
+    align-self: center;
+}
 
 /* --------------------------- FILTER CONTAINER  --------------------------- */
 
@@ -66,14 +101,6 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-#divider {
-    background-color: red;
-    width: 90%;
-    height: 1px;
-    margin: 1rem;
-    align-self: center;
 }
 
 /* Headers */
@@ -152,31 +179,9 @@ header img {
 }
 
 .knife-and-fork-style-filter {
-    position: relative;
-    left: 45px;
-    top: -10px;
+    display: flex;
+    align-items: center;
 }
-
-.knife-and-fork-style-modify {
-    gap: 0.5rem;
-    top: -10px;
-}
-
-.taco-recipe .knife-and-fork-style-modify {
-    position: relative;
-    left: 15px;
-}
-
-.sweet-potato-recipe .knife-and-fork-style-modify {
-    position: relative;
-    left: 20px;
-}
-
-.beet-recipe .knife-and-fork-style-modify {
-    position: relative;
-    left: 40px;
-}
-
 
 .knife-and-fork-style-modify p {
     background-color: #F7F9FB;
@@ -188,19 +193,27 @@ header img {
 .recipe-first-block-text {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .knife-and-fork-style {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    margin-top: -0.5rem;
 }
 
-.knife-and-fork-style-filter,
+
 .knife-and-fork-style-modify {
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.knife-and-fork-style-filter {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .knife-and-fork-style-filter p {
@@ -208,6 +221,7 @@ header img {
 }
 
 .recipe-second-row {
+    margin-top: 0.5rem;
     margin-left: 1rem;
 }
 
