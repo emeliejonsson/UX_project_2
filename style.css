@@ -1,5 +1,5 @@
 #select-ingredient-container {
-    display:none;
+    display: none;
 }
 
 body {
@@ -56,6 +56,12 @@ header img {
     border: none;
 }
 
+#search-input:focus {
+    background-image: none;
+    padding-left: 12px;
+    font-family: Inter;
+}
+
 /* --------------------------- SELECT INGREDIENT CONTAINER --------------------------- */
 
 .selected-pill {
@@ -82,7 +88,7 @@ header img {
 
 #dashed-divider {
     width: 90%;
-    border:none;
+    border: none;
     border-top: 2px dashed #E3E7EB;
     margin: 1rem;
     align-self: center;
@@ -133,6 +139,17 @@ header img {
     padding: 0 0.5rem 0 0.5rem;
 }
 
+.pill:hover {
+    background-color: #3C4C5D;
+    color: white;
+}
+
+.meat-dropdown:hover,
+.fish-dropdown:hover {
+    background-color: #3C4C5D;
+    color: white;
+}
+
 .allergies-dropdown {
     height: 30px;
     background-color: #BDDBF9;
@@ -143,59 +160,41 @@ header img {
 
 /* ------------------------- SORTING CONTAINER ------------------------- */
 #sorting-container {
-    display: flex;
-    flex-direction: column;
-    
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
-#sorting-container-first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 16px;
-    position: relative;
-    left: 325px;
-    
-    
+#sort-element {
+    margin-bottom: -1rem;
 }
 
-#sorting-container-second-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    font-family:'Work Sans', sans-serif;
+#recipe-count {
     font-size: 30px;
     font-weight: 600;
-    font-style: semi-bold;
-    
-    
+    font-style: bold;
 }
 
-.sorting-options{
+.sorting-options {
     display: flex;
     align-items: center;
-    
-
 }
 
 .sorting-options select {
     width: 280px;
     height: 44px;
     border: none;
-    font-family:'montserrat', sans-serif;
     font-weight: 120;
-    font-size: 20px;
-    box-shadow: 0px 1px 0px grey;
-    border-radius:6px;
-
-
+    font-size: 16px;
+    box-shadow: 0px 2px 5px grey;
+    border-radius: 6px;
 }
+
 /* ------------------------- RECIPE CONTAINER ------------------- */
-.taco-recipe, 
+.taco-recipe,
 .sweet-potato-recipe,
 .beet-recipe {
     margin-bottom: 1rem;
-    box-shadow: 0px 2px 5px grey;  
+    box-shadow: 0px 2px 5px grey;
 }
 
 .recipe-container article {
@@ -242,7 +241,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     margin-top: -0.5rem;
-    
+
 }
 
 
@@ -312,8 +311,6 @@ header img {
 .arrow {
     height: 30px;
     width: 30px;
-    
-    
 }
 
 .warm {
@@ -322,8 +319,9 @@ header img {
 }
 
 .allergy {
-    border: 1px solid #9B3736CC;
+    border: 2px solid #9B3736CC;
     border-radius: 6px;
+    padding: 20px;
 }
 
 .cold {
